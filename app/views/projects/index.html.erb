@@ -1,0 +1,11 @@
+<h1>Projects</h1>
+  <ul>
+    <% @projects.each do |id, project| %>
+		<li>
+			<%= link_to project[:name], project_path(id) %>
+			<%= project[:desc] %>
+			<%= project[:image] %>
+		</li>
+	<% end %>
+
+</ul>
