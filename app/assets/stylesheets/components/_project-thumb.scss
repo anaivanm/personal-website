@@ -1,0 +1,16 @@
+.project-thumb {
+	border: 1px solid black;
+	height: 45vh;
+}
+
+.info-flex {
+	display: flex;
+	align-items: center;
+}
+
+.info-flex--second {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	text-align: right;
+}

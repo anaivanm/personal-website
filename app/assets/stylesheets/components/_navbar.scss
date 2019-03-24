@@ -1,8 +1,14 @@
 .navbar-custom {
+  display: flex;
   justify-content: space-between;
-  background: $white;
   align-items: center;
-  padding-top: 15px;
+  background-color: transparent;
+  transition: 0.5 background-color ease;
+  padding: 20px 30px;
+}
+
+.navbar-custom-white {
+  background-color: $white;
 }
 
 .square-logo {

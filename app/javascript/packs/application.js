@@ -1,7 +1,7 @@
 import 'bootstrap';
 import { sayHello } from '../components/stagger';
 import { updateNavbar } from '../components/navbar';
-
+import { loadDynamicBannerText } from '../components/hero';
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -12,3 +12,4 @@ import { updateNavbar } from '../components/navbar';
 // layout file, like app/views/layouts/application.html.erb
 
 updateNavbar();
+loadDynamicBannerText();
