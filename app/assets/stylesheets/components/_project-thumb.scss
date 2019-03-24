@@ -1,16 +1,57 @@
 .project-thumb {
 	border: 1px solid black;
-	height: 45vh;
+	height: 35vh;
 }
 
-.info-flex {
-	display: flex;
-	align-items: center;
+.project-info {
+	align-self: center;
 }
 
-.info-flex--second {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	text-align: right;
+.btn-b {
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: $black;
+	 &:hover{
+	 	text-decoration: none;
+	 	color: $black;
+    .arrow-tail{
+      width: 100%;
+      opacity: 1;
+    }
+    .arrow-tri{
+      opacity: 1;
+      right: 0;
+    }
+  }
+}
+
+.arrow-right{
+  display: inline-block;
+  position: relative;
+  height: 14px;
+  width: 20px;
+}
+.arrow-tail{
+  width: 0;
+  height: 2px;
+  top: 50%;
+  background-color: black;
+  position: absolute;
+  margin-top: 1px;
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.arrow-tri{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+  right: 100%;
+  opacity: 0;
+  top: 30%;
+  transition: all .4s ease;
 }
