@@ -1,5 +1,15 @@
-<div>
-	<%= link_to "PROJECTS", projects_path(@parent) %>
-	<%= link_to "ABOUT", about_path %>	
-	<%= link_to "CONTACT", contact_path %>	
+<div class="container-fluid">
+	<div class="body-wrapper">
+		<div class="navbar-body">
+			<div class="item">
+				<%= link_to "PROJECTS", projects_path(@parent) %>
+			</div>
+			<div class="item">
+				<%= link_to "ABOUT", about_path %>
+			</div>
+			<div class="item">	
+				<%= link_to "CONTACT", contact_path %>
+			</div>
+		</div>
+	</div>	
 </div>
