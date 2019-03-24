@@ -1,0 +1,5 @@
+const updateNavbar = () => {
+
+}
+
+export { updateNavbar };
