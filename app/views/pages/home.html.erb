@@ -1,15 +1,8 @@
-<div class="container-fluid">
-	<div class="body-wrapper">
-		<div class="navbar-body">
-			<div class="item">
-				<%= link_to "PROJECTS", projects_path(@parent) %>
-			</div>
-			<div class="item">
-				<%= link_to "ABOUT", about_path %>
-			</div>
-			<div class="item">	
-				<%= link_to "CONTACT", contact_path %>
-			</div>
-		</div>
-	</div>	
+<div class="row mt-5 mb-5">
+	<div class="hero col-md-6 col-xs-12">
+		<h1><span id="hero-typed-text"></span></h1>
+	</div>
 </div>
+<%= render 'shared/projects-home' %>
+
+
