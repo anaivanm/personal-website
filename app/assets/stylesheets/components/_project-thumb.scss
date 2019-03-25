@@ -1,24 +1,22 @@
-.project-thumb {
-	border: 1px solid black;
-	height: 35vh;
+.inner-flex {
+  display: flex;
 }
 
 .project-info {
-	align-self: center;
-}
-
-.btn-b {
-	display: flex;
-	justify-content: space-between;
-	text-decoration: none;
-	color: $black;
-  animation: sway 1.5s ease infinite;
-  animation-play-state: paused;
-  padding-right: 5px;
-	 &:hover{
-	 	text-decoration: none;
-	 	color: $black;
-    animation-play-state: running;
+  align-self: center;
+  .btn-b {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: $black;
+    animation: sway 1.5s ease infinite;
+    animation-play-state: paused;
+    padding-right: 5px;
+    &:hover{
+      text-decoration: none;
+      color: $black;
+      animation-play-state: running;
+    }
   }
 }
 
@@ -26,4 +24,108 @@
   50% {
     padding-right: 15px;
   }
+}
+
+.boxes {
+  position: relative;
+  right: 1rem;
+}
+.project-thumb {
+  position: absolute;
+  z-index: 1;
+  background: red;
+  width: 450px;
+  height: 250px;
+  border: 1px solid red;
+  left: 2.3rem;
+  top: .6rem;
+}
+
+.project-thumb--back {
+  width: 450px;
+  height: 270px;
+  border: 5px solid blue;
+  margin-left: 3rem;
+}
+
+// Screen size 425px or less
+
+@media only screen and (max-width: 600px) {
+  .project-info {
+    display: none;
+  }
+
+  .project-thumb {
+    position: absolute;
+    z-index: 1;
+    background: red;
+    width: 330px;
+    height: 230px;
+    border: 1px solid red;
+    left: 6rem;
+    top: 1rem;
+  }
+
+  .project-thumb--back {
+    margin-right: 5rem;
+    width: 300px;
+    height: 260px;
+    border: 5px solid yellow;
+  }
+}
+
+// Screen size 1420px or less
+@media only screen and (min-width: 1120px) and (max-width: 1420px) {
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-name {
+  float: left;
+}
+.hr {
+  display: none;
+}
+.project-info {
+  text-align: center;
+  .btn-b {
+    padding-left: 5rem;
+    text-decoration: none;
+    color: $black;
+    animation: none;
+    .fas {
+      padding-left: .5rem;
+    }
+    &:hover{
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
+}
+
+// Screen size 1119px or less
+@media only screen and (max-width: 1119px) {
+.inner-flex {
+  display: flex;
+}
+
+.project-info {
+  align-self: center;
+  .btn-b {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: $black;
+    animation: sway 1.5s ease infinite;
+    animation-play-state: paused;
+    padding-right: 5px;
+    &:hover{
+      text-decoration: none;
+      color: $black;
+      animation-play-state: running;
+    }
+  }
+}
 }
