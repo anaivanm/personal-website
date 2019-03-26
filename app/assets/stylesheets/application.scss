@@ -11,3 +11,15 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.wrapper {
+	margin-left: 6rem;
+	margin-right: 6rem;
+}
+
+@media only screen and (max-width: 577px) {
+.wrapper {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+}

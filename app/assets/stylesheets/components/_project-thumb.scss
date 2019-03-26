@@ -1,16 +1,174 @@
-.project-thumb {
-	border: 1px solid black;
-	height: 45vh;
+// Screen 1440px and up
+.row {
+  margin-right: 0 !important;
 }
 
-.info-flex {
-	display: flex;
-	align-items: center;
+.inner-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
 }
 
-.info-flex--second {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	text-align: right;
+.project-info--left {
+  align-self: center;
+  text-align: left;
+  margin-left: 2rem;
 }
+
+.project-info--right {
+  align-self: center;
+  margin-left: 2rem;
+  text-align: right;
+}
+  .btn-b {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+    &:hover{
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+.boxes {
+  position: relative;
+}
+
+.project-thumb--left {
+  position: absolute;
+  z-index: 1;
+  background: red;
+  width: 450px;
+  height: 250px;
+  left: 2.3rem;
+  top: .6rem;
+}
+
+.project-thumb--right {
+  position: absolute;
+  z-index: 1;
+  background: red;
+  width: 450px;
+  height: 250px;
+  left: 3.7rem;
+  top: .6rem;
+}
+
+.project-thumb--back {
+  width: 450px;
+  height: 270px;
+  border: 5px solid blue;
+  margin-left: 3rem;
+}
+
+// Screen size 577px or less
+
+@media only screen and (max-width: 577px) {
+  .inner-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #second {
+    flex-direction: column-reverse !important;
+  }
+
+  .project-thumb--back {
+    visibility: hidden;
+  }
+  .project-thumb--left {
+  position: absolute;
+  z-index: 1;
+  background: red;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.project-thumb--right {
+  position: absolute;
+  z-index: 1;
+  background: red;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+  .project-name {
+    float: left;
+  }
+
+  .hr {
+    display: none;
+  }
+  .btn-b {
+    padding-left: 4.5rem;
+  }
+}
+
+// Screen size 578px - 798px
+
+@media only screen and (min-width: 578px) and (max-width: 798px) {
+  .inner-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #second {
+    flex-direction: column-reverse !important;
+  }
+
+  .project-name {
+    float: left;
+  }
+
+  .hr {
+    display: none;
+  }
+  .btn-b {
+    padding-left: 4.5rem;
+  }
+}
+
+// Screen size 799px - 1119px
+
+@media only screen and (min-width: 799px) and (max-width: 1119px) {
+  .inner-flex {
+    justify-content: space-between;
+  }
+}
+
+// Screen size 1120px - 1420px
+@media only screen and (min-width: 1120px) and (max-width: 1420px) {
+  .inner-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #second {
+    flex-direction: column-reverse !important;
+  }
+
+  .project-name {
+    float: left;
+  }
+  .hr {
+    display: none;
+  }
+  .project-info--left {
+    text-align: center;
+  }
+
+  .project-info--right {
+    text-align: center;
+  }
+
+  .btn-b {
+      padding-left: 4.5rem;
+  }
+}
+

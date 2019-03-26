@@ -7,8 +7,10 @@
 $font-family-sans-serif:  $font;
 $headings-font-family:    $font;
 $body-bg:                 $white;
-$font-size-base: 1rem;
-$h1-font-size:	$font-size-base * 3.5;
+
+$h1-font-size:	3.5rem;
+$h2-font-size:	1.2rem;
+
 // Colors
 $body-color: $gray;
 $primary:    $blue;
@@ -23,3 +25,10 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 1115px,
+  lg: 1120px,
+  xl: 1200px
+) !default;
