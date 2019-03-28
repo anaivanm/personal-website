@@ -1,10 +1,12 @@
-<h1>Projects</h1>
+<h4 class="mt-5">Projects</h4>
   <ul>
-    <% @projects.each do |id, project| %>
+    <% @projects.each do |project| %>
 		<li>
-			<%= link_to project[:name], project_path(id) %>
-			<%= project[:desc] %>
-			<%= project[:image] %>
+			<h6><%= link_to project.name, project_path(project) %></h6>
+			<%= project.name %>
+			<%= project.desc %>
+			<%= link_to 'Github', project.git_url %>
+			<%= link_to 'Website', project.web_url %>
 		</li>
 	<% end %>
 

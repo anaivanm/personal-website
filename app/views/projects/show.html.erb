@@ -1,5 +1,8 @@
-<h1><%= @project[:name] %></h1>
+<h1><%= @project.name %></h1>
 
-<p> <%= @project[:desc] %></p>
+<p> <%= @project.desc %></p>
 
-<%= image_tag @project[:image] %>
+<%= link_to 'Github', @project.git_url %>
+<%= link_to 'Website', @project.web_url %>
+<br>
+<%= link_to 'Back', projects_path %>
