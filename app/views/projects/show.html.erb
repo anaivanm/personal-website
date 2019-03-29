@@ -1,6 +1,7 @@
 <h1><%= @project.name %></h1>
 
 <p> <%= @project.desc %></p>
+<%= image_tag @project.photo %>
 
 <%= link_to 'Github', @project.git_url %>
 <%= link_to 'Website', @project.web_url %>

@@ -1,13 +1,10 @@
 <h4 class="mt-5">Projects</h4>
-  <ul>
-    <% @projects.each do |project| %>
-		<li>
-			<h6><%= link_to project.name, project_path(project) %></h6>
-			<%= project.name %>
-			<%= project.desc %>
-			<%= link_to 'Github', project.git_url %>
-			<%= link_to 'Website', project.web_url %>
-		</li>
-	<% end %>
-
-</ul>
+<div>
+	<row>
+		<% @projects.each do |p|  %>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+			<%= render "project-card", project: p %>
+		</div>
+		<% end %>
+	</row>
+</div>
