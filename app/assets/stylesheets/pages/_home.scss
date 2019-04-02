@@ -1,19 +1,78 @@
-// Specific CSS for your home-page
-.hero {
-	height: 70vh;
-	width: 50vw;
-	padding-top: 20vh;
-}
-
 #hero-typed-text {
-	line-height: 4rem;
+	line-height: 6rem;
 	font-weight: 400;
+	text-align: justify;
 }
 
-// Screen size 425px or less
-@media only screen and (max-width: 1024px) {
+.hero {
+	padding-top: 20vh;
+	height: 60vh;
+	width: 50vw;
+}
+
+// Screen size 577px or less
+
+@media only screen and (max-width: 577px) {
+	#hero-typed-text {
+		line-height: 1rem;
+		font-weight: 400;
+		font-size: 36px !important;
+		padding-right: 20px;
+		text-align: justify;
+	}
+
 	.hero {
+		padding-top: 15vh;
+		height: 55vh;
+		width: 90vw;
+	}
+}
+
+// Screen size 578px - 798px
+
+@media only screen and (min-width: 578px) and (max-width: 798px) {
+	#hero-typed-text {
+		line-height: 1.5rem;
+		font-weight: 400;
+		font-size: 46px !important;
+		text-align: justify;
+	}
+
+	.hero {
+		padding-top: 15vh;
+		height: 55vh;
+		width: 90vw;
+	}
+}
+
+// Screen size 799px - 1119px
+
+@media only screen and (min-width: 799px) and (max-width: 1119px) {
+	#hero-typed-text {
+		line-height: 3rem;
+		font-weight: 400;
+		font-size: 50px !important;
+		text-align: justify;
+	}
+
+	.hero {
+		padding-top: 15vh;
+		height: 55vh;
+		width: 60vw;
+	}
+}
+
+// Screen size 1120px - 1420px
+@media only screen and (min-width: 1120px) and (max-width: 1420px) {
+	#hero-typed-text {
+		line-height: 4rem;
+		font-weight: 400;
+		text-align: justify;
+	}
+
+	.hero {
+		padding-top: 20vh;
 		height: 70vh;
-		width: 100vw;
+		width: 50vw;
 	}
 }

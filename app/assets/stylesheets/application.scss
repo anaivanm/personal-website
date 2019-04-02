@@ -13,13 +13,33 @@
 @import "pages/index";
 
 .wrapper {
-	margin-left: 6rem;
-	margin-right: 6rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
 
+// Screen size 577px or less
+
 @media only screen and (max-width: 577px) {
-.wrapper {
-	margin-left: 1rem;
-	margin-right: 1rem;
+	.wrapper {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
+
+// Screen size 578px - 798px
+
+@media only screen and (min-width: 578px) and (max-width: 798px) {
+	.wrapper {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+// Screen size 799px - 1119px
+
+@media only screen and (min-width: 799px) and (max-width: 1119px) {
+	.wrapper {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
 }
