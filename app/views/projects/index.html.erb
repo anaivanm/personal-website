@@ -1,11 +1,10 @@
-<h1>Projects</h1>
-  <ul>
-    <% @projects.each do |id, project| %>
-		<li>
-			<%= link_to project[:name], project_path(id) %>
-			<%= project[:desc] %>
-			<%= project[:image] %>
-		</li>
-	<% end %>
-
-</ul>
+<h4 class="mt-5">Projects</h4>
+<div>
+	<row>
+		<% @projects.each do |p|  %>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+			<%= render "project-card", project: p %>
+		</div>
+		<% end %>
+	</row>
+</div>
