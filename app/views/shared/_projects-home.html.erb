@@ -1,76 +1,56 @@
-
-<div class="row">
-	<!-- P1 -->
-	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<div class="project-card">
-			<%= link_to "/", :class => "class-name" do %>
-				<div class="project-card-display">
-					<div class="image">
-						<%= image_tag "project-flare.png" %>
-					</div>
-				</div>
-				<div class="project-card-hover mauve">
-					<h2>PROJECT NAME</h2>
-					<p>Description of the project</p>
-					<p class="link mauve">Click to see project</p>
-				</div>
-			<% end %>
-		<div class="project-card-border"></div>
-		</div>
-	</div>
-	<!-- P2 -->
-	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<div class="project-card">
-			<%= link_to "/" do %>
-				<div class="project-card-display">
-					<div class="image">
-						<%= image_tag "project-flare.png" %>
-					</div>
-				</div>
-				<div class="project-card-hover yellow">
-					<h2>PROJECT NAME</h2>
-					<p>Description of the project</p>
-					<p class="link yellow">Click to see project</p>
-				</div>
-			<% end %>
-		<div class="project-card-border"></div>
-		</div>
-	</div>
-	<!-- P3 -->
-	<div class="bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<div class="project-card">
-			<%= link_to "/" do %>
-				<div class="project-card-display">
-					<div class="image">
-						<%= image_tag "project-flare.png" %>
-					</div>
-				</div>
-				<div class="project-card-hover pink">
-					<h2>PROJECT NAME</h2>
-					<p>Description of the project</p>
-					<p class="link pink">Click to see project</p>
-				</div>
-			<% end %>
-		<div class="project-card-border"></div>
-		</div>
-	</div>
-
-	<!-- P4 -->
-	<div class="bottom col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		<div class="project-card">
-			<%= link_to "/" do %>
-				<div class="project-card-display">
-					<div class="image">
-						<%= image_tag "project-flare.png" %>
-					</div>
-				</div>
-				<div class="project-card-hover red">
-					<h2>PROJECT NAME</h2>
-					<p>Description of the project</p>
-					<p class="link red">Click to see project</p>
-				</div>
-			<% end %>
-		<div class="project-card-border"></div>
-		</div>
-	</div>
+<div class="main-grid">
+    <div class="grid--item">
+        <a href="#" class="inside-grid--item main">
+          <%= image_tag "project-flare.png", :class => "image" %>
+          <div class="overlay d-none d-sm-block">
+            <h3>PROJECT</h3>
+            <p class="color--yellow">Click for more details</p>
+            <hr class="line-length">
+          </div>
+      </a>
+        <div class="inside-grid--item second red"></div>
+        <div class="inside-grid--item third pink"></div>
+        <div class="inside-grid--item fourth mauve"></div>
+      
+    </div>
+    <div class="grid--item">
+      <a href="#" class="inside-grid--item main">
+        <%= image_tag "project-fcc-final.jpg", :class => "image" %>
+          <div class="overlay d-none d-sm-block">
+            <h3>PROJECT</h3>
+            <p class="color--yellow">Click for more details</p>
+            <hr class="line-length">
+        </div>
+      </a>
+        <div class="inside-grid--item second red"></div>
+        <div class="inside-grid--item third mauve"></div>
+        <div class="inside-grid--item fourth pink"></div>
+    </div>
+    <div class="grid--item">
+      <a href="#" class="inside-grid--item main">
+        <img src="https://images.unsplash.com/photo-1519687774292-8ef26b975fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="image">
+          <div class="overlay d-none d-sm-block">
+            <h3>PROJECT</h3>
+            <p class="color--yellow">Click for more details</p>
+            <hr class="line-length">
+        </div>
+      </a>
+        <div class="inside-grid--item second pink"></div>
+        <div class="inside-grid--item third mauve"></div>
+        <div class="inside-grid--item fourth red"></div>
+    </div>
+    <div class="grid--item">
+      <a href="#" class="inside-grid--item main">
+        <img src="https://images.unsplash.com/photo-1533425172290-3aa4ffb75948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80" class="image">
+          <div class="overlay d-none d-sm-block">
+            <h3>PROJECT</h3>
+            <p class="color--yellow">Click for more details</p>
+            <hr class="line-length">
+        </div>
+      </a>
+        <div class="inside-grid--item second mauve"></div>
+        <div class="inside-grid--item third red"></div>
+        <div class="inside-grid--item fourth pink"></div>
+    </div>
+  </div>
 </div>
