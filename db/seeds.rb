@@ -3,9 +3,9 @@ Project.destroy_all
 puts "Adding projects..."
 
 projects = [
-	{ name: 'Portfolio website', desc: 'HTML, CSS, JS, GSAP, Bootstrap 4', git_url: 'https://github.com/anaivanm/flare', web_url: 'www.sendaflare.com', photo: 'project-flare.png' }, 
-	{ name: 'Score Keeper', desc: 'Meteor, React, Semantic Ui', git_url: 'https://github.com/anaivanm/score-keeper-meteor', web_url: 'www.sendaflare.com', photo: 'project-score.png' },
-	{ name: 'Flare', desc: 'Ruby on Rails, ActionCable, PostgreSQL, MapBox API', git_url: 'https://github.com/anaivanm/flare', web_url: 'www.sendaflare.com', photo: 'project-portfolio.jpg' },
+	{ name: 'Portfolio website', description: 'HTML, CSS, JS, GSAP, Bootstrap 4', git_url: 'https://github.com/anaivanm/flare', web_url: 'www.sendaflare.com', photo: 'project-flare.jpg' }, 
+	{ name: 'Score Keeper', description: 'Meteor, React, Semantic Ui', git_url: 'https://github.com/anaivanm/score-keeper-meteor', web_url: 'www.sendaflare.com', photo: 'project-score.jpg' },
+	{ name: 'Flare', description: 'Ruby on Rails, ActionCable, PostgreSQL, MapBox API', git_url: 'https://github.com/anaivanm/flare', web_url: 'www.sendaflare.com', photo: 'project-fcc-final.jpg' },
 ]	
 
 
