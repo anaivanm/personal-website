@@ -1,5 +1,0 @@
-const updateNavbar = () => {
-
-}
-
-export { updateNavbar };
