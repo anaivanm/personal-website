@@ -13,8 +13,8 @@
 @import "pages/index";
 
 .wrapper {
-	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
 // Screen size 577px or less
@@ -39,7 +39,7 @@
 
 @media only screen and (min-width: 799px) and (max-width: 1119px) {
 	.wrapper {
-		margin-left: 3rem;
-		margin-right: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 }
