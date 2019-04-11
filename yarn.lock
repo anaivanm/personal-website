@@ -675,10 +675,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@rails/webpacker@^4.0.0-rc.8":
-  version "4.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.0.0-rc.8.tgz#ccffbc8f5561ad04178af982f43623a43960b204"
-  integrity sha512-At1VE4uNbb1BI6yDCqhaCT6MNQamlYhYrXZkrJkbayCPGzWK9vUq49+csgDjD3o/IYnNEweJo2vgixfxl6qNyg==
+"@rails/webpacker@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.0.2.tgz#2c2e96527500b060a84159098449ddb1615c65e8"
+  integrity sha512-TDj/+UHnWaEg8X21E3cGKvptm3BbW1aUtOAXtrYwpK9tkiWq+Dc40Gm2RIZW7rU3jxDDBZgPRiqvr5B0dorIVw==
   dependencies:
     "@babel/core" "^7.3.4"
     "@babel/plugin-proposal-class-properties" "^7.3.4"
@@ -3562,9 +3562,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jquery@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
+  integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
 
 js-base64@^2.1.8:
   version "2.5.1"
