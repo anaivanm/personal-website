@@ -26,10 +26,13 @@
   position: absolute;
   z-index: 3;
   background: white;
-  text-align: justify;
+  text-align: left;
   height: 80vh;
   overflow: scroll;
+}
 
+#about-info-main::-webkit-scrollbar {
+  width: 50px;
 }
 
 #about-info-red {
@@ -91,6 +94,33 @@ input#button:checked ~ .text {
   display: block;
 }
 
+.about-social {
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+  i {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+ .fa-twitter:hover {
+    color: $red;
+  }
+  .fa-linkedin-in:hover {
+    color: $mauve;
+  }
+  .fa-github:hover {
+     color: $yellow;
+  }
+  .fa-behance:hover {
+     color: $pink;
+    
+  }
+}
+
 @media only screen and (max-width: 378px) { 
   .child {
     align-self: center;
@@ -112,16 +142,15 @@ input#button:checked ~ .text {
 }
 
 @media only screen and (min-width: 378px) and(max-width: 622px) { 
-#about-photo {
-  background: url("https://images.unsplash.com/photo-1543165365-07232ed12fad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-  background-size: cover;
-  border-top: 2px solid $red;
-  border-bottom: 2px solid $yellow;
-  border-left: 2px solid $mauve;
-  border-right: 2px solid $pink;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
+  #about-photo {
+    background: url("https://images.unsplash.com/photo-1543165365-07232ed12fad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-size: cover;
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $yellow;
+    border-left: 2px solid $mauve;
+    border-right: 2px solid $pink;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
 }
