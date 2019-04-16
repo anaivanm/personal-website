@@ -10,14 +10,13 @@
 
 .child {
   align-self: center;
-  margin: 4rem;
-  width: 450px;
-  height: 80vh;
+  width: 30vw;
+  height: 75vh;
   position: relative;
 }
 
 #about-info-boxes {
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 #about-info-main {
@@ -26,12 +25,12 @@
   z-index: 3;
   background: white;
   text-align: left;
-  height: 80vh;
   overflow: scroll;
 }
 
 #about-info-paragraph {
   margin: 3rem 2rem;
+  height: 400px;
 }
 
 #about-info-main::-webkit-scrollbar {
@@ -62,7 +61,7 @@
   position: absolute;
   border: 2px solid $pink;
   z-index: 1;
-  top: -10%;
+  top: 10%;
   left: -15%;
   width: 130%;
   height: 90%;
@@ -154,7 +153,10 @@ input#button:checked ~ .text {
   }
 }
 
-@media only screen and (min-width: 378px) and(max-width: 622px) { 
+@media only screen and (min-width: 378px) and (max-width: 1025px) { 
+  .child {
+    width: 300px;
+  }
   #about-photo {
     background: url("https://images.unsplash.com/photo-1543165365-07232ed12fad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
     background-size: cover;
