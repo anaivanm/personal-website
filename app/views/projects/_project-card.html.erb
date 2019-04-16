@@ -1,8 +1,7 @@
-<div class="card">
-	<div class="project-description">
-		<p> <%= link_to project.name, project_path(project) %> </p>
-		<p> <%= project.description %> </p>
-		<p> <%= link_to 'Github', project.git_url %> </p>
-		<p> <%= link_to 'Website', project.web_url %> </p>
+<%= link_to project_path(project) do %>
+	<div class="overlay">
+		<h3><%= project.name %></h3>
+		<p class="color--yellow">Click here for more details</p>
+		<hr class="line-length">
 	</div>
-</div>
+<% end %>

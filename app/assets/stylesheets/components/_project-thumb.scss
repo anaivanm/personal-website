@@ -3,8 +3,27 @@
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 40px;
+  justify-content: space-evenly;
+}
+
+.index-main-grid {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.index-title {
+  font-weight: 600;
+}
+
+.index-grid-item {
+  flex-basis: 400px;
+  height: 250px;
+  display: flex;
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .grid--item {
@@ -13,7 +32,8 @@
   margin: 0 0px 15px 0;
   display: flex;
   width: 100%;
-  margin: 10px;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -82,7 +102,7 @@
   text-align: center;
   box-shadow: 0px 0px 2px 0px $lightgray;
   height: 100%;
-  width: 70%;
+  width: 100%;
   opacity: 1;
   transition: .5s ease;
   background-color: $black;
