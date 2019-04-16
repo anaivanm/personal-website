@@ -1,13 +1,12 @@
 #hero-typed-text {
 	line-height: 6rem;
 	font-weight: 600;
-	text-align: justify;
+	text-align: left;
 }
 
 .hero {
-	padding-top: 20vh;
-	padding-left: 8vh;
-	height: 65vh;
+	margin-left: 4rem;
+	height: 45vh;
 	width: 70vw;
 }
 
@@ -19,7 +18,6 @@
 		font-weight: 400;
 		font-size: 34px !important;
 		padding-right: 20px;
-		text-align: left;
 	}
 
 	.hero {
@@ -37,7 +35,6 @@
 		line-height: 3rem;
 		font-weight: 500;
 		font-size: 50px !important;
-		text-align: justify;
 	}
 
 	.hero {
@@ -52,7 +49,6 @@
 	#hero-typed-text {
 		line-height: 4rem;
 		font-weight: 600;
-		text-align: justify;
 	}
 
 	.hero {
