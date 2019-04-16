@@ -1,6 +1,7 @@
 <div class="about-wrapper">
 	<div class="child" id="about-info-boxes">
 		<div id="about-info-main">
+			<div id="about-info-paragraph">
 			<p>I am a web developer and an avid film watcher. I am a book worm and a coffee drinker. I have a diverse tech and education experience. I have worked in a variety of customer-facing jobs from customer support to account management. This has helped me get a better understanding of what the customer wants, what the company wants and how tech delivers. I found the latter more compelling so here I am.</p> 
 			<p>For the last 3 years I have lived in Copenhagen. Folks here are nice and they love gummy bears, bicycles and open-faced sandwiches and we have a couple of things in common too.</p>
 			<p>I value effective teamwork, innovation and simplicity.</p> 
@@ -9,10 +10,15 @@
 			</label></p>
 			<input type="checkbox" id="button">
 			<ul class="text">
-				<li>I am a film programmer at MIX Copenhagen LGBTQ+ Film Festival</li>
-				<li>I am a front-end teaching assistant at Le Wagon Copenhagen</li>
-				<li>I am dedicated to living a sustainable and environmentally-friendly life and research ways of being better at helping our planet and those who live in it</li>
-			</ul>
+				<li>&#8212;
+I am a film programmer at MIX Copenhagen LGBTQ+ Film Festival</li><br>
+				<li>&#8212;
+I am a front-end teaching assistant at Le Wagon Copenhagen</li><br>
+				<li>&#8212;
+I am dedicated to living a sustainable and environmentally-friendly life and research ways of being better at helping our planet and those who live in it</li>
+			</ul><br>
+			<p>Thanks for stopping by.</p>
+			</div>
 		</div>
 		<div id="about-info-red"></div>
 		<div id="about-info-pink"></div>
@@ -20,12 +26,8 @@
 	</div>
 	<div class="child" id="about-photo">
 		<div class="about-social">
-			<%= link_to 'https://twitter.com/anaivanm1' do %>
-      			<i class="fab fa-twitter"></i>
-    		<% end %>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-behance"></i>
+		<%= link_to 'Github', 'https://github.com/anaivanm', class: 'social-link' %>
+		<%= link_to 'LinkedIn', 'https://www.linkedin.com/in/anaivanm/', class: 'social-link' %>
         </div>
 	</div>
 </div>

@@ -21,7 +21,6 @@
 }
 
 #about-info-main {
-  padding: 2rem;
   border: 2px solid $yellow;
   position: absolute;
   z-index: 3;
@@ -31,8 +30,12 @@
   overflow: scroll;
 }
 
+#about-info-paragraph {
+  margin: 3rem 2rem;
+}
+
 #about-info-main::-webkit-scrollbar {
-  width: 50px;
+  width: 0;
 }
 
 #about-info-red {
@@ -78,7 +81,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  font-weight: bold;
+  font-weight: 600;
   color: $mauve !important;
 }
 
@@ -88,6 +91,9 @@ input {
 
 .text {
   display: none;
+  li {
+    list-style: none;
+  }
 }
 
 input#button:checked ~ .text {
@@ -98,28 +104,35 @@ input#button:checked ~ .text {
   position: absolute;
   z-index: 1;
   background: transparent;
-  bottom: 0;
+  bottom: -8%;
   right: 0;
-  i {
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-  }
-  
- .fa-twitter:hover {
-    color: $red;
-  }
-  .fa-linkedin-in:hover {
-    color: $mauve;
-  }
-  .fa-github:hover {
-     color: $yellow;
-  }
-  .fa-behance:hover {
-     color: $pink;
-    
+  .social-link {
+    padding: .5rem .5rem .1rem .5rem;
+    color: $black;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: .5px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 60%;
+        height: 100%;
+        border-bottom: 4px solid $yellow;
+        opacity: 0.5;
+        transform: scaleX(0);
+        transition: .3s all ease-in;
+          }
+          &:hover {
+              text-decoration: none;
+          &:after {
+              transform: scaleX(1.1);
+          }
+        }
   }
 }
+
 
 @media only screen and (max-width: 378px) { 
   .child {
@@ -152,5 +165,9 @@ input#button:checked ~ .text {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+  }
+  .about-social {
+    bottom: -20%;
+    right: 6%;
   }
 }
