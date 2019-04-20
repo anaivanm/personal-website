@@ -8,11 +8,18 @@ $font-family-sans-serif:  $font;
 $headings-font-family:    $font;
 $body-bg:                 $white;
 
-$h1-font-size:	3.5rem;
-$h2-font-size:	1.2rem;
-
+// Font sizes
+$font-size-base-mobile:		  .8rem !default;
+$font-size-base:              1rem !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+$line-height-base:            1 ;
 // Colors
-$body-color: $black;
+$body-color: $red;
 $primary:    $blue;
 $success:    $green;
 $info:       $yellow;

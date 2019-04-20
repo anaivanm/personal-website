@@ -1,13 +1,7 @@
-<div class="navbar-custom fixed-top">
-  <%= link_to root_path, class: "navbar-brand" do %>
-  <div class="square-logo hover-rotate"></div>
-  <% end %>
-  <ul class="menu-items">
-   <li>
-     <%= link_to "WORK", projects_path %>
-   </li>
-   <li>
-     <%= link_to "ABOUT", about_path %>
-   </li>
- </ul>
+<div class="container">
+	<div class="d-flex justify-content-between py-4">
+		<div><%= link_to 'Work', projects_path, class: 'navbar-link' %></div>
+		<div><%= link_to 'Ana Ivan', root_path, class: 'navbar-link' %></div>
+		<div><%= link_to 'About', about_path, class: 'navbar-link' %></div>
+	</div>
 </div>

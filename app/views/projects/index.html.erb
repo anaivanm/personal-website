@@ -1,8 +1,3 @@
-<h1 class="index-title">Projects</h1>
-<row class="index-main-grid">
-	<% @projects.each do |p|  %>
-	<div class="index-grid-item">
-		<%= render "project-card", project: p %>
-	</div>
-	<% end %>
-</row>
+<% @projects.each do |project| %>
+<%= render partial: 'shared/projects-carousel', locals: { project: project } %>
+<% end %>
