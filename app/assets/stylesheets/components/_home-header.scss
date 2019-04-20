@@ -1,0 +1,41 @@
+.width-carousel {
+	width: 100vw;
+}
+
+.header {
+	padding: 0;
+}
+
+@include media-breakpoint-up(sm) {
+	.width-carousel {
+		width: 60vw;
+	}
+
+	.header {
+		padding: 3rem;
+	}
+}
+
+.header-h1 {
+	font-size: $h1-font-size;
+	line-height: $line-height-base * 1.5;
+}
+
+.header-p {
+		font-size: $font-size-base-mobile;
+		text-align: center;
+		line-height: $line-height-base * 2;
+}
+
+@include media-breakpoint-up(sm) {
+	.header-h1 {
+		font-size: $h1-font-size * 2;
+		line-height: $line-height-base;
+	}
+
+	.header-p {
+		margin-top: 4rem;
+		font-size: $font-size-base;
+		line-height: $line-height-base * 2;
+	}
+}

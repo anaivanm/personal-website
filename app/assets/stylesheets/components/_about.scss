@@ -1,0 +1,21 @@
+.about-image {
+	width: 65%;
+}
+
+.width-about {
+	width: 90vw;
+}
+
+.about-text {
+	margin: 0;
+	padding: 0;
+	font-size: $font-size-base-mobile;
+}
+@include media-breakpoint-up(sm) {
+	.width-about {
+		width: 50vw;
+	}
+	.about-text {
+		font-size: $font-size-base;
+	}
+}
